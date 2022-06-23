@@ -1,0 +1,6 @@
+framework module Pods_Guawa {
+  umbrella header "Pods-Guawa-umbrella.h"
+
+  export *
+  module * { export * }
+}

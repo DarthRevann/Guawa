@@ -1,0 +1,6 @@
+framework module Pods_Guawa_GuawaUITests {
+  umbrella header "Pods-Guawa-GuawaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,13 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58B6CD7D796F173B7FD7E44C /* Pods_Guawa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB32D74559070E9C2AA0F5A /* Pods_Guawa.framework */; };
+		B4B3F4CC4A9C2229CB6D6DB3 /* Pods_GuawaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776FBFCE928E33180403E4EE /* Pods_GuawaTests.framework */; };
+		C24E053CE56EBC2F6A660622 /* Pods_Guawa_GuawaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3B8D9733A83487DD8AEDE4 /* Pods_Guawa_GuawaUITests.framework */; };
 		F6364888284364A000F9B879 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6364887284364A000F9B879 /* OnboardingViewController.swift */; };
 		F636488B2843E3C700F9B879 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636488A2843E3C700F9B879 /* UIView+Extension.swift */; };
 		F636488D2843E5CC00F9B879 /* onboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636488C2843E5CC00F9B879 /* onboardingSlide.swift */; };
+		F659EF6C2863928D00F8C05A /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F659EF6A2863928D00F8C05A /* CategoryCollectionViewCell.swift */; };
+		F659EF6D2863928D00F8C05A /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F659EF6B2863928D00F8C05A /* CategoryCollectionViewCell.xib */; };
+		F659EF6F2863980C00F8C05A /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F659EF6E2863980C00F8C05A /* DishCategory.swift */; };
+		F66FEE9128639DF200BB7201 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FEE9028639DF200BB7201 /* String + Extension.swift */; };
 		F6B14E5E2842A30900B95346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B14E5D2842A30900B95346 /* AppDelegate.swift */; };
 		F6B14E602842A30900B95346 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B14E5F2842A30900B95346 /* SceneDelegate.swift */; };
 		F6B14E652842A30900B95346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B14E632842A30900B95346 /* Main.storyboard */; };
@@ -18,6 +25,7 @@
 		F6B14E802842A30C00B95346 /* GuawaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B14E7F2842A30C00B95346 /* GuawaUITests.swift */; };
 		F6DA39932843EF87004FABE7 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DA39922843EF87004FABE7 /* OnboardingCollectionViewCell.swift */; };
 		F6E13A9A28435291003CCB58 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E13A9928435291003CCB58 /* Launch Screen.storyboard */; };
+		F6FE8FB62863187A00A574E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE8FB52863187A00A574E4 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +46,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D948E66209ABDD072A9D8E7 /* Pods-Guawa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guawa.release.xcconfig"; path = "Target Support Files/Pods-Guawa/Pods-Guawa.release.xcconfig"; sourceTree = "<group>"; };
+		5C3B8D9733A83487DD8AEDE4 /* Pods_Guawa_GuawaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guawa_GuawaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E6AABCEEEE115E57010CE3 /* Pods-GuawaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuawaTests.debug.xcconfig"; path = "Target Support Files/Pods-GuawaTests/Pods-GuawaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		776FBFCE928E33180403E4EE /* Pods_GuawaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuawaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF938D45BA3EB37EEFE4A1E /* Pods-GuawaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuawaTests.release.xcconfig"; path = "Target Support Files/Pods-GuawaTests/Pods-GuawaTests.release.xcconfig"; sourceTree = "<group>"; };
+		A078E6AC195384CB2FD5EC46 /* Pods-Guawa-GuawaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guawa-GuawaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Guawa-GuawaUITests/Pods-Guawa-GuawaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9AE555633D297CB6EACD0EB /* Pods-Guawa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guawa.debug.xcconfig"; path = "Target Support Files/Pods-Guawa/Pods-Guawa.debug.xcconfig"; sourceTree = "<group>"; };
+		BBB32D74559070E9C2AA0F5A /* Pods_Guawa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guawa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6364887284364A000F9B879 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F636488A2843E3C700F9B879 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F636488C2843E5CC00F9B879 /* onboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingSlide.swift; sourceTree = "<group>"; };
+		F659EF6A2863928D00F8C05A /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		F659EF6B2863928D00F8C05A /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		F659EF6E2863980C00F8C05A /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		F66FEE9028639DF200BB7201 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		F6B14E5A2842A30900B95346 /* Guawa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guawa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B14E5D2842A30900B95346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6B14E5F2842A30900B95346 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +75,8 @@
 		F6B14E812842A30C00B95346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6DA39922843EF87004FABE7 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6E13A9928435291003CCB58 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F6FE8FB52863187A00A574E4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FAF146651471BB560AE4981A /* Pods-Guawa-GuawaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guawa-GuawaUITests.release.xcconfig"; path = "Target Support Files/Pods-Guawa-GuawaUITests/Pods-Guawa-GuawaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B6CD7D796F173B7FD7E44C /* Pods_Guawa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B3F4CC4A9C2229CB6D6DB3 /* Pods_GuawaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,15 +100,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C24E053CE56EBC2F6A660622 /* Pods_Guawa_GuawaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A399B03AE6C7E61773B2D21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE555633D297CB6EACD0EB /* Pods-Guawa.debug.xcconfig */,
+				4D948E66209ABDD072A9D8E7 /* Pods-Guawa.release.xcconfig */,
+				A078E6AC195384CB2FD5EC46 /* Pods-Guawa-GuawaUITests.debug.xcconfig */,
+				FAF146651471BB560AE4981A /* Pods-Guawa-GuawaUITests.release.xcconfig */,
+				76E6AABCEEEE115E57010CE3 /* Pods-GuawaTests.debug.xcconfig */,
+				9BF938D45BA3EB37EEFE4A1E /* Pods-GuawaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8370BF07CB1A98B70117F77B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBB32D74559070E9C2AA0F5A /* Pods_Guawa.framework */,
+				5C3B8D9733A83487DD8AEDE4 /* Pods_Guawa_GuawaUITests.framework */,
+				776FBFCE928E33180403E4EE /* Pods_GuawaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F6364882284363EB00F9B879 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				F659EF682863925600F8C05A /* CollectionViewCells */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -92,6 +141,7 @@
 		F6364883284363F900F9B879 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6FE8FB22863177C00A574E4 /* Home */,
 				F63648862843641A00F9B879 /* Onboarding */,
 			);
 			path = Views;
@@ -118,17 +168,38 @@
 			isa = PBXGroup;
 			children = (
 				F636488A2843E3C700F9B879 /* UIView+Extension.swift */,
+				F66FEE9028639DF200BB7201 /* String + Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F659EF682863925600F8C05A /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F659EF692863926900F8C05A /* CategoryCollectionViewCells */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		F659EF692863926900F8C05A /* CategoryCollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F659EF6A2863928D00F8C05A /* CategoryCollectionViewCell.swift */,
+				F659EF6B2863928D00F8C05A /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectionViewCells;
 			sourceTree = "<group>";
 		};
 		F6B14E512842A30900B95346 = {
 			isa = PBXGroup;
 			children = (
+				F659EF6E2863980C00F8C05A /* DishCategory.swift */,
 				F6B14E5C2842A30900B95346 /* Guawa */,
 				F6B14E732842A30B00B95346 /* GuawaTests */,
 				F6B14E7E2842A30C00B95346 /* GuawaUITests */,
 				F6B14E5B2842A30900B95346 /* Products */,
+				1A399B03AE6C7E61773B2D21 /* Pods */,
+				8370BF07CB1A98B70117F77B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +248,14 @@
 			path = GuawaUITests;
 			sourceTree = "<group>";
 		};
+		F6FE8FB22863177C00A574E4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F6FE8FB52863187A00A574E4 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6B14E842842A30C00B95346 /* Build configuration list for PBXNativeTarget "Guawa" */;
 			buildPhases = (
+				3482B57AFDABB59861264BAF /* [CP] Check Pods Manifest.lock */,
 				F6B14E562842A30900B95346 /* Sources */,
 				F6B14E572842A30900B95346 /* Frameworks */,
 				F6B14E582842A30900B95346 /* Resources */,
+				91DEA216DE36A3CEF5650FAF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6B14E872842A30C00B95346 /* Build configuration list for PBXNativeTarget "GuawaTests" */;
 			buildPhases = (
+				880A73084FE7C798A9CE4669 /* [CP] Check Pods Manifest.lock */,
 				F6B14E6C2842A30B00B95346 /* Sources */,
 				F6B14E6D2842A30B00B95346 /* Frameworks */,
 				F6B14E6E2842A30B00B95346 /* Resources */,
@@ -219,9 +301,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6B14E8A2842A30C00B95346 /* Build configuration list for PBXNativeTarget "GuawaUITests" */;
 			buildPhases = (
+				15EB58CD392372037149E272 /* [CP] Check Pods Manifest.lock */,
 				F6B14E772842A30C00B95346 /* Sources */,
 				F6B14E782842A30C00B95346 /* Frameworks */,
 				F6B14E792842A30C00B95346 /* Resources */,
+				4B738B395BCC709F2CF50E29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F659EF6D2863928D00F8C05A /* CategoryCollectionViewCell.xib in Resources */,
 				F6E13A9A28435291003CCB58 /* Launch Screen.storyboard in Resources */,
 				F6B14E672842A30B00B95346 /* Assets.xcassets in Resources */,
 				F6B14E652842A30900B95346 /* Main.storyboard in Resources */,
@@ -302,16 +387,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15EB58CD392372037149E272 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Guawa-GuawaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3482B57AFDABB59861264BAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Guawa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B738B395BCC709F2CF50E29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guawa-GuawaUITests/Pods-Guawa-GuawaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guawa-GuawaUITests/Pods-Guawa-GuawaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Guawa-GuawaUITests/Pods-Guawa-GuawaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		880A73084FE7C798A9CE4669 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuawaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91DEA216DE36A3CEF5650FAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guawa/Pods-Guawa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guawa/Pods-Guawa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Guawa/Pods-Guawa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6B14E562842A30900B95346 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F659EF6C2863928D00F8C05A /* CategoryCollectionViewCell.swift in Sources */,
 				F6B14E5E2842A30900B95346 /* AppDelegate.swift in Sources */,
+				F66FEE9128639DF200BB7201 /* String + Extension.swift in Sources */,
 				F6B14E602842A30900B95346 /* SceneDelegate.swift in Sources */,
 				F636488B2843E3C700F9B879 /* UIView+Extension.swift in Sources */,
 				F636488D2843E5CC00F9B879 /* onboardingSlide.swift in Sources */,
 				F6364888284364A000F9B879 /* OnboardingViewController.swift in Sources */,
+				F6FE8FB62863187A00A574E4 /* HomeViewController.swift in Sources */,
+				F659EF6F2863980C00F8C05A /* DishCategory.swift in Sources */,
 				F6DA39932843EF87004FABE7 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +669,7 @@
 		};
 		F6B14E852842A30C00B95346 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9AE555633D297CB6EACD0EB /* Pods-Guawa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -495,6 +688,7 @@
 		};
 		F6B14E862842A30C00B95346 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D948E66209ABDD072A9D8E7 /* Pods-Guawa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -513,6 +707,7 @@
 		};
 		F6B14E882842A30C00B95346 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E6AABCEEEE115E57010CE3 /* Pods-GuawaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,6 +729,7 @@
 		};
 		F6B14E892842A30C00B95346 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BF938D45BA3EB37EEFE4A1E /* Pods-GuawaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -555,6 +751,7 @@
 		};
 		F6B14E8B2842A30C00B95346 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A078E6AC195384CB2FD5EC46 /* Pods-Guawa-GuawaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -574,6 +771,7 @@
 		};
 		F6B14E8C2842A30C00B95346 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAF146651471BB560AE4981A /* Pods-Guawa-GuawaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

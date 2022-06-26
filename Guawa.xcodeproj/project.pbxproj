@@ -150,6 +150,7 @@
 		F63648842843640500F9B879 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F659EF6E2863980C00F8C05A /* DishCategory.swift */,
 				F636488C2843E5CC00F9B879 /* onboardingSlide.swift */,
 			);
 			path = Models;
@@ -193,7 +194,6 @@
 		F6B14E512842A30900B95346 = {
 			isa = PBXGroup;
 			children = (
-				F659EF6E2863980C00F8C05A /* DishCategory.swift */,
 				F6B14E5C2842A30900B95346 /* Guawa */,
 				F6B14E732842A30B00B95346 /* GuawaTests */,
 				F6B14E7E2842A30C00B95346 /* GuawaUITests */,

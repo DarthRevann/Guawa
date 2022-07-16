@@ -79,7 +79,7 @@ extension OnboardingViewController:
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let width = scrollView.frame.width
         currentPage = Int(scrollView.contentOffset.x / width)
-        pageControl.currentPage = currentPage
+        
     }
 }
 

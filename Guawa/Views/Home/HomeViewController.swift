@@ -8,8 +8,8 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-   
     @IBOutlet weak var categoryCollectionView: UICollectionView!
+    
     
     var categories: [DishCategory] = [
         .init(id: "id1", name: "Kazakh Dish", image: "https://picsum.photos/100/200"),
@@ -22,16 +22,18 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Guawa"
+//        title = "Guawa"
         // Do any additional setup after loading the view.
+        
+        
     
         
         registerCells()
     }
     
-    private func registerCells() {
-        categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
-    }
+  private func registerCells() {
+       categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
+  }
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -41,8 +43,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
+        cell.setup(category: categories[indexPath.row])
         return cell
-    }
+        }
    
-}
+    }
     

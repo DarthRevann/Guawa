@@ -25,6 +25,10 @@
 		F6B14E802842A30C00B95346 /* GuawaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B14E7F2842A30C00B95346 /* GuawaUITests.swift */; };
 		F6DA39932843EF87004FABE7 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DA39922843EF87004FABE7 /* OnboardingCollectionViewCell.swift */; };
 		F6E13A9A28435291003CCB58 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E13A9928435291003CCB58 /* Launch Screen.storyboard */; };
+		F6F3E8852883480D00A76F47 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3E8842883480D00A76F47 /* CardView.swift */; };
+		F6F3E889288484C300A76F47 /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3E887288484C300A76F47 /* DishPortraitCollectionViewCell.swift */; };
+		F6F3E88A288484C300A76F47 /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F3E888288484C300A76F47 /* DishPortraitCollectionViewCell.xib */; };
+		F6F3E88C2884892300A76F47 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3E88B2884892300A76F47 /* Dish.swift */; };
 		F6FE8FB62863187A00A574E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE8FB52863187A00A574E4 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,10 @@
 		F6B14E812842A30C00B95346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6DA39922843EF87004FABE7 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6E13A9928435291003CCB58 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F6F3E8842883480D00A76F47 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F6F3E887288484C300A76F47 /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6F3E888288484C300A76F47 /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
+		F6F3E88B2884892300A76F47 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		F6FE8FB52863187A00A574E4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FAF146651471BB560AE4981A /* Pods-Guawa-GuawaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guawa-GuawaUITests.release.xcconfig"; path = "Target Support Files/Pods-Guawa-GuawaUITests/Pods-Guawa-GuawaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +141,7 @@
 		F6364882284363EB00F9B879 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				F6F3E883288347F600A76F47 /* CardView */,
 				F659EF682863925600F8C05A /* CollectionViewCells */,
 			);
 			path = CustomViews;
@@ -152,6 +161,7 @@
 			children = (
 				F659EF6E2863980C00F8C05A /* DishCategory.swift */,
 				F636488C2843E5CC00F9B879 /* onboardingSlide.swift */,
+				F6F3E88B2884892300A76F47 /* Dish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +187,7 @@
 		F659EF682863925600F8C05A /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				F6F3E8862884849C00A76F47 /* DishPortrait */,
 				F659EF692863926900F8C05A /* CategoryCollectionViewCells */,
 			);
 			path = CollectionViewCells;
@@ -246,6 +257,23 @@
 				F6B14E812842A30C00B95346 /* Info.plist */,
 			);
 			path = GuawaUITests;
+			sourceTree = "<group>";
+		};
+		F6F3E883288347F600A76F47 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				F6F3E8842883480D00A76F47 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		F6F3E8862884849C00A76F47 /* DishPortrait */ = {
+			isa = PBXGroup;
+			children = (
+				F6F3E887288484C300A76F47 /* DishPortraitCollectionViewCell.swift */,
+				F6F3E888288484C300A76F47 /* DishPortraitCollectionViewCell.xib */,
+			);
+			path = DishPortrait;
 			sourceTree = "<group>";
 		};
 		F6FE8FB22863177C00A574E4 /* Home */ = {
@@ -366,6 +394,7 @@
 			files = (
 				F659EF6D2863928D00F8C05A /* CategoryCollectionViewCell.xib in Resources */,
 				F6E13A9A28435291003CCB58 /* Launch Screen.storyboard in Resources */,
+				F6F3E88A288484C300A76F47 /* DishPortraitCollectionViewCell.xib in Resources */,
 				F6B14E672842A30B00B95346 /* Assets.xcassets in Resources */,
 				F6B14E652842A30900B95346 /* Main.storyboard in Resources */,
 			);
@@ -504,7 +533,10 @@
 				F6364888284364A000F9B879 /* OnboardingViewController.swift in Sources */,
 				F6FE8FB62863187A00A574E4 /* HomeViewController.swift in Sources */,
 				F659EF6F2863980C00F8C05A /* DishCategory.swift in Sources */,
+				F6F3E8852883480D00A76F47 /* CardView.swift in Sources */,
 				F6DA39932843EF87004FABE7 /* OnboardingCollectionViewCell.swift in Sources */,
+				F6F3E88C2884892300A76F47 /* Dish.swift in Sources */,
+				F6F3E889288484C300A76F47 /* DishPortraitCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

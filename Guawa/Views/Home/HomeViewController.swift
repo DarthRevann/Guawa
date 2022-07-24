@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var popularCollectionView: UICollectionView!
     
+    @IBOutlet weak var specialCollectionView: UICollectionView!
     
     var categories: [DishCategory] = [
         .init(id: "id1", name: "Kazakh Dish", image: "https://picsum.photos/100/200"),
@@ -22,9 +23,15 @@ class HomeViewController: UIViewController {
     ]
     
     var populars: [Dish] = [
-        .init(id: "id1", name: "Pizza", desription: "This is the best I have ever tasted!", image: "https://picsum.photos/100/200", calories: 555.28777757),
-        .init(id: "id1", name: "T-bone", desription: "Delicious meat", image: "https://picsum.photos/100/200", calories: 773.3577757),
-        .init(id: "id1", name: "Syrne", desription: "gooooooooooooooood", image: "https://picsum.photos/100/200", calories: 999.28777757)
+        .init(id: "id1", name: "Pizza", desription: "This is the best I have ever tasted!", image: "https://picsum.photos/100/200", calories: 555),
+        .init(id: "id1", name: "T-bone", desription: "Delicious meat", image: "https://picsum.photos/100/200", calories: 773),
+        .init(id: "id1", name: "Syrne", desription: "gooooooooooooooood", image: "https://picsum.photos/100/200", calories: 999)
+    ]
+    
+    var specials: [Dish] = [
+        .init(id: "id1", name: "Shashlyk", desription: "Enjoy the exquisite taste of meat", image: "https://picsum.photos/100/200", calories: 555),
+        .init(id: "id1", name: "Gulyash", desription: "Amazing meat in gravy with rice", image: "https://picsum.photos/100/200", calories: 773),
+        .init(id: "id1", name: "Samarkandi Plov", desription: "OMG its kaif!", image: "https://picsum.photos/100/200", calories: 999)
     ]
     
 //    override func loadViewIfNeeded() {
@@ -37,7 +44,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
+        specialCollectionView.delegate = self
+        specialCollectionView.dataSource = self
 //        title = "Guawa"
         // Do any additional setup after loading the view.
         
@@ -55,6 +63,8 @@ class HomeViewController: UIViewController {
        categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
     
        popularCollectionView.register(UINib(nibName: DishPortraitCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
+    
+       specialCollectionView.register(UINib(nibName: DishLandscapeCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishLandscapeCollectionViewCell.identifier)
   }
 }
 
@@ -65,9 +75,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return categories.count
         case popularCollectionView:
             return populars.count
+        case specialCollectionView:
+            return specials.count
         default:
             return 0
         }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -79,6 +92,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         case popularCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishPortraitCollectionViewCell.identifier, for: indexPath) as! DishPortraitCollectionViewCell
             cell.setup(dish: populars[indexPath.row])
+            return cell
+        case specialCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishLandscapeCollectionViewCell.identifier, for: indexPath) as! DishLandscapeCollectionViewCell
+            cell.setup(dish: specials[indexPath.row])
             return cell
         default:
             return UICollectionViewCell()

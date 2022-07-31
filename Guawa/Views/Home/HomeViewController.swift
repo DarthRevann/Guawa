@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
     @IBOutlet weak var popularCollectionView: UICollectionView!
@@ -37,8 +38,7 @@ class HomeViewController: UIViewController {
 //    override func loadViewIfNeeded() {
 //        self.p.layoutIfNeeded()
     
-    
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,9 +102,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == categoryCollectionView {
-            //some actions
+            let controller = ListDishesViewController.instantiate()
+            
+            navigationController?.pushViewController(controller, animated: true)
+            controller.category = categories[indexPath.row]
         } else {
             let controller = DishDetailViewController.instantiate()
             controller.dish = collectionView == popularCollectionView ? populars[indexPath.row] : specials[indexPath.row]
@@ -115,3 +119,5 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
    
 }
     
+
+
